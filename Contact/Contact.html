@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    function sub()
+    {
+      if((document.form1.fname.value!='')&&(document.form1.lname.value!='')&&(document.form1.subject.value!=''))
+      {
+        alert("Thank you for reaching us!");
+      }
+    }
+    </script>
+<link rel="stylesheet" type="text/css" href="Contact.css" />    
+<head> 
+<center><h2>Contact us</h2><center>
+</head>
+<body>
+    <div id="wrapper">
+    <div class="container">
+        <form name='form1' action="">
+      
+          <label for="fname">First Name</label>
+          <input required type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input required type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="Indonesia">Indonesia</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit" onclick="sub()">
+          <a href = "\index.html"></a>
+          <input type="reset" value="Clear">
+          
+
+        </form>
+      </div>   
+      <div id="footer">
+        <p>Copyright &copy; 2022 - <a href="">Berita Satu</a> &middot; All Rights Reserved Kelompok 6 
+          <a href ="https://instagram.com/beritasatu1?igshid=YmMyMTA2M2Y="><img src="img/logo-ig.png" align="right"style="width:30px;height:30px;"/></a>
+          <a href ="https://twitter.com/"><img href ="https://twitter.com/" src="img/logo-twitter.png" align="right"style="width:30px;height:30px;"/></a>
+      </div>
+</body>
+</html>
